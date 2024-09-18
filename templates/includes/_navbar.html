@@ -1,0 +1,56 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="col-lg-3">
+        <div class="navbar-header">
+          <a href="/" class="logo"><img src="{{ url_for('static',filename='img/logo.png') }}"></a>
+        </div>
+    </div>
+
+    <div class="col-lg-9">
+      <div class="site-title"><h3>Multi-Device Multi-task Orchestration System</h3></div>
+      <ul class="nav navbar-nav">
+
+          <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                          aria-haspopup="true" aria-expanded="false">
+              <span class="nav-label">Service Analysis</span><span class="caret"></span></a>
+
+
+            <ul class="dropdown-menu">
+                <li><a href="/addservice">Describe Service</a></li>
+                <li><a href="/addmicroservices">Discribe Microservice</a></li>
+                <li><a href="/services">Services</a></li>
+            </ul>
+          </li >
+
+
+          <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                          aria-haspopup="true" aria-expanded="false">
+              <span class="nav-label">Manage Tasks</span><span class="caret"></span></a>
+
+
+            <ul class="dropdown-menu">
+                <li><a href="/addtask">Add Single Task</a></li>
+                <li><a href="/gentasks">Generate Tasks</a></li>
+                <li><a href="/edittask">Update Tasks</a></li>
+            </ul>
+          </li >
+
+
+          <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                          aria-haspopup="true" aria-expanded="false">
+              <span class="nav-label">Manage VOs</span><span class="caret"></span></a>
+
+
+            <ul class="dropdown-menu">
+                <li><a href="/addvirtualobj">Add Virtual Objectk</a></li>
+                <li><a href="/editvo">Update Virtual Objects</a></li>
+            </ul>
+          </li >
+      <li><a href="/map-tasks">Task Mapping</a></li>
+      <li><a href="/schedule-tasks">Task Scheduling</a></li>
+      <li><a href="/deploy-tasks">Task Allocation</a></li>
+    </ul>
+    </div>
+
+  </div>
+</nav>

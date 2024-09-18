@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap-tagsinput.css') }}">
+
+</head>
+<body>
+
+
+    <div class="container">
+        {% include 'includes/_navbar.html'%}
+        <div class="main-content">
+             {% include 'includes/_messages.html'%}
+             {% block body %}{% endblock %}
+        </div>
+
+        {% include 'includes/footer.html'%}
+    </div>
+
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.5.8/js/jsplumb.min.js"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap-tagsinput.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+</body>
+</html>
