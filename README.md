@@ -1,6 +1,6 @@
-Hi, I am Ahmad Shabir and This is the repository of my Personal website.
+# Multi-device Multi-task orchestration architecture for IoT applications
 
-This is a work in progress! stay tuned!
+This is the repository for the implementation of the project's *multi-device multi-task orchestration* architecture.
 
 
 Credits
